@@ -1,0 +1,45 @@
+<%- include ("partials/head.html") %>
+<%- include ("partials/nav.html") %>
+
+<div class="container-fluid"> 
+    <div class="row content">
+      <div class="col-sm-12">
+        <h1>Register for new account</h1>
+        <div class="col-md-4 col-sm-4 col-xs-12 login-form">
+            <form action="/register" enctype="multipart/form-data" method="POST">
+                <div class="form-group">
+                   <label for="first-name">First Name:</label>
+                   <input type="text" class="form-control" name="user[first_name]" id="first-name">
+                </div>
+                <div class="form-group">
+                  <label for="last-name">Last Name:</label>
+                  <input type="text" class="form-control" name="user[last_name]" id="last-name">
+               </div>
+                <div class="form-group">
+                  <label for="email">Email address:</label>
+                  <input type="email" class="form-control" name="user[email]" id="email">
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone:</label>
+                  <input type="tel" class="form-control" name="user[phone]" id="phone">
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Password:</label>
+                  <input type="password" class="form-control" name="user[pwd]" id="pwd">
+                </div>
+                <div class="form-group">
+                  <label for="retype-pwd">Retype Password:</label>
+                  <input type="password" class="form-control" name="user[retype_pwd]" id="retype-pwd">
+                </div>
+                <div class="form-group">
+                  <label for="avatar">Avatar:</label>
+                  <input type="file" class="" name="user[avatar]" id="avatar">
+                </div>
+                <button type="submit" class="btn btn-default">Register</button>
+              </form>
+        </div>        
+      </div>
+    </div>
+  </div>
+
+  <%- include ("partials/footer.html") %>
