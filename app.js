@@ -1,9 +1,8 @@
-
-//
+/* app.js */
+// app.js
 const express = require("express");
 const app     = express();
 const router  = express.Router();
-
 
 const bootstrap = require("./src/bootstrap");
 bootstrap(app, router);
